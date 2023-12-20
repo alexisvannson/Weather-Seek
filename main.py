@@ -298,7 +298,7 @@ def C02_precipitation(rain, C02):
 
 def plot_city_data(city):
   if city not in city_names:
-    return "wrong city name"
+    return "The city is not included in the data"
   else:  
     city_index = city_names.index(city)
     city_matrix = city_matrices[city_index]
