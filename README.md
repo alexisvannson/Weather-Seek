@@ -32,11 +32,11 @@ The `correlation_matrix` function calculates correlation coefficients between te
 
 ## Additional Functions
 
-### Exercise 5 - Paris Climate Data
+###  Paris Climate Data
 
 This exercise introduces Paris climate data from the file "Paris_data_climate.txt." The `get_data` function extracts temperature, precipitation, CO2 levels, and sea level rise data from the Paris matrix. Various visualizations, including `temp_C02`, `temp_sea`, `precipitation_sea`, and `C02_precipitation`, explore relationships between temperature, CO2 levels, precipitation, and sea level rise in Paris.
 
-### Exercise 6 - City-specific Data Plotting
+### City-specific Data Plotting
 
 The `plot_city_data` function allows users to visualize temperature-CO2, temperature-sea level rise, precipitation-sea level rise, and CO2-precipitation relationships for a specified city. Matplotlib is used to create multiple plots for the chosen city.
 
