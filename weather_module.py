@@ -272,32 +272,26 @@ def get_data(matrix):
   return temp, precipitation, C02, SeaLevelRise
 temp, precipitation, C02, SeaLevelRise = get_data(paris_matrix)
 
-def temp_C02(C02, temp):
-  mpl.plot(C02, temp)
-  mpl.xlabel('C02/ppm')
-  mpl.ylabel('Temperature/Cº')
-  mpl.show()
-temp_C02(C02, temp)
-
-def temp_sea(temp, sea):
-  mpl.plot(temp, sea)
-  mpl.ylabel('Rise in Sea Level/mm')
-  mpl.xlabel('Temperature/Cº')
-  mpl.show()
-
-
-def precipitation_sea(rain, sea):
-  mpl.plot(rain, sea)
-  mpl.xlabel("Precipitation/mm")
-  mpl.ylabel("Rise in Sea Level/mm")
-  mpl.show()
-
-
-def C02_precipitation(rain, C02):
-  mpl.plot(C02, rain)
-  mpl.xlabel('C02/ppm')
-  mpl.ylabel("Precipitation/mm")
-  mpl.show()
+def temp_C02(C02,temp):
+    mpl.plot(C02,temp)
+    mpl.xlabel('C02/ppm')
+    mpl.ylabel('Temperature/Cº')
+    mpl.show()
+def temp_sea(sea,temp):
+    mpl.plot(sea,temp)
+    mpl.xlabel('Rise in Sea Level/mm')
+    mpl.ylabel('Temperature/Cº')
+    mpl.show()
+def precipitation_sea(sea,rain):
+    mpl.plot(sea,rain)
+    mpl.ylabel("Precipitation/mm")
+    mpl.xlabel("Rise in Sea Level/mm")
+    mpl.show()
+def C02_precipitation(rain,C02):
+    mpl.plot(C02,rain)
+    mpl.xlabel('C02/ppm')
+    mpl.ylabel("Precipitation/mm")
+    mpl.show()
 
 #Exercice 6
 
