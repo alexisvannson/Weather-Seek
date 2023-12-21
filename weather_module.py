@@ -77,12 +77,7 @@ dates = [
     "2023-01-26", "2023-01-27", "2023-01-28", "2023-01-29", "2023-01-30",
     "2023-01-31"
 ]
-bigmatrix = np.loadtxt(
-    "data_temperature.txt",
-    delimiter=",",
-    usecols=[2, 3, 4, 5, 6, 7],
-    skiprows=1,
-)
+
 city_names = [
     "NewYork", "LosAngeles", "London", "Tokyo", "Beijing", "Sydney", "Paris",
     "Berlin", "Cairo", "NewDelhi"
