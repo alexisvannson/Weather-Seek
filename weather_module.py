@@ -303,8 +303,8 @@ def plot_city_data(city):
     city_matrix = city_matrices[city_index]
     temp, precipitation, C02, SeaLevelRise = get_data(city_matrix)
     temp_C02(C02, temp)
-    temp_sea(temp, SeaLevelRise)
-    precipitation_sea(precipitation, SeaLevelRise)
+    temp_sea(SeaLevelRise, temp)
+    precipitation_sea(SeaLevelRise, precipitation)
     C02_precipitation(precipitation, C02)
 
   
