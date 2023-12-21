@@ -298,9 +298,9 @@ def plot_city_data(city):
   else:  
     city_index = city_names.index(city)
     city_matrix = city_matrices[city_index]
-    average_temperature(city_matrix)
-    total_precipitation(city_matrix)
-    max_min_wind_speed(city_matrix)
+    print(f'average temperature of {city} is {average_temperature(city_matrix)}')
+    print(f'total precipitation of {city} is {total_precipitation(city_matrix)}')
+    print(f'"The max wind speed in {city} is {max_min_wind_speed(city_matrix)[0]} and minimum wind speed is {max_min_wind_speed(city_matrix)[1]}"
       
     
     
