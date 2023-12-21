@@ -68,6 +68,20 @@ NDLmatrix = np.loadtxt("data_temperature.txt",
                        skiprows=280,
                        max_rows=31)
 
+city_names = []
+with open("data_temperature.txt", "r") as file:
+    lines = file.readlines()
+    for line in lines:
+        data = line.split(",")
+        city = data[1]
+        if city not in city_names:
+            city_names.append(city)
+
+city_matrices = [
+    NYmatrix, LAmatrix, LDNmatrix, TKYmatrix, BJmatrix, SYDmatrix, PRSmatrix,
+    BLNmatrix, CROmatrix, NDLmatrix
+]
+
 dates = [
     "2023-01-01", "2023-01-02", "2023-01-03", "2023-01-04", "2023-01-05",
     "2023-01-06", "2023-01-07", "2023-01-08", "2023-01-09", "2023-01-10",
@@ -78,14 +92,8 @@ dates = [
     "2023-01-31"
 ]
 
-city_names = [
-    "NewYork", "LosAngeles", "London", "Tokyo", "Beijing", "Sydney", "Paris",
-    "Berlin", "Cairo", "NewDelhi"
-]
-city_matrices = [
-    NYmatrix, LAmatrix, LDNmatrix, TKYmatrix, BJmatrix, SYDmatrix, PRSmatrix,
-    BLNmatrix, CROmatrix, NDLmatrix
-]
+
+
 
 
 def average_temperature(matrix):
