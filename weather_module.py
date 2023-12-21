@@ -298,12 +298,12 @@ def plot_city_data(city):
   else:  
     city_index = city_names.index(city)
     city_matrix = city_matrices[city_index]
-    temp, precipitation, C02, SeaLevelRise = get_data(city_matrix)
-    temp_C02(C02, temp)
-    temp_sea(SeaLevelRise, temp)
-    precipitation_sea(SeaLevelRise, precipitation)
-    C02_precipitation(precipitation, C02)
-
+    average_temperature(city_matrix)
+    total_precipitation(city_matrix)
+    max_min_wind_speed(city_matrix)
+      
+    
+    
   
 
 #plot_city_data(sys.arv[1])
